@@ -3,6 +3,7 @@ package rest
 import (
 	"encoding/json"
 	"fmt"
+	"strconv"
 	"time"
 
 	"github.com/juju/errors"
@@ -19,12 +20,12 @@ type ohlcServer struct {
 // 180, etc) to a slice of OHLC candles for that period, in the time ascending
 // order.
 func (c *RESTClient) GetOHLC(
-	exchangeSymbol, pairSymbol string, targetPeriod common.Period,
+	exchangeSymbol, pairSymbol string, after int64, targetPeriod common.Period,
 ) ([]common.Interval, error) {
 	result, err := c.do(
 		request{
 			endpoint: fmt.Sprintf("markets/%s/%s/ohlc", exchangeSymbol, pairSymbol),
-			params:   map[string]string{"periods": string(targetPeriod)},
+			params:   map[string]string{"after": strconv.FormatInt(after, 10), "periods": string(targetPeriod)},
 		},
 	)
 	if err != nil {
