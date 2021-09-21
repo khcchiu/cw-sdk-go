@@ -1,4 +1,4 @@
-package websocket // import "code.cryptowat.ch/cw-sdk-go/client/websocket"
+package websocket // import "github.com/khcchiu/cw-sdk-go/client/websocket"
 
 import (
 	"context"
@@ -15,10 +15,10 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/juju/errors"
 
-	"code.cryptowat.ch/cw-sdk-go/client/websocket/internal"
-	"code.cryptowat.ch/cw-sdk-go/version"
-	pbc "code.cryptowat.ch/cw-sdk-go/proto/public/client"
-	pbs "code.cryptowat.ch/cw-sdk-go/proto/public/stream"
+	"github.com/khcchiu/cw-sdk-go/client/websocket/internal"
+	"github.com/khcchiu/cw-sdk-go/version"
+	pbc "github.com/khcchiu/cw-sdk-go/proto/public/client"
+	pbs "github.com/khcchiu/cw-sdk-go/proto/public/stream"
 )
 
 // The following errors are returned from wsConn, which applies to both

@@ -15,12 +15,12 @@ import (
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"
 
-	"code.cryptowat.ch/cw-sdk-go/client/cw"
-	"code.cryptowat.ch/cw-sdk-go/client/rest"
-	"code.cryptowat.ch/cw-sdk-go/client/websocket/internal"
-	"code.cryptowat.ch/cw-sdk-go/common"
-	pbb "code.cryptowat.ch/cw-sdk-go/proto/public/broker"
-	pbs "code.cryptowat.ch/cw-sdk-go/proto/public/stream"
+	"github.com/khcchiu/cw-sdk-go/client/cw"
+	"github.com/khcchiu/cw-sdk-go/client/rest"
+	"github.com/khcchiu/cw-sdk-go/client/websocket/internal"
+	"github.com/khcchiu/cw-sdk-go/common"
+	pbb "github.com/khcchiu/cw-sdk-go/proto/public/broker"
+	pbs "github.com/khcchiu/cw-sdk-go/proto/public/stream"
 )
 
 // Set up mock REST client with 1 market

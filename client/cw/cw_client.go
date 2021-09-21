@@ -5,9 +5,9 @@ import (
 
 	"github.com/juju/errors"
 
-	"code.cryptowat.ch/cw-sdk-go/cache"
-	"code.cryptowat.ch/cw-sdk-go/client/rest"
-	"code.cryptowat.ch/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/cache"
+	"github.com/khcchiu/cw-sdk-go/client/rest"
+	"github.com/khcchiu/cw-sdk-go/common"
 )
 
 type Interface interface {

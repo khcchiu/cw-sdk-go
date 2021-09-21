@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"code.cryptowat.ch/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/common"
 )
 
 type Cache struct {

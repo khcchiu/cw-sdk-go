@@ -11,7 +11,7 @@ import (
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"
 
-	"code.cryptowat.ch/cw-sdk-go/version"
+	"github.com/khcchiu/cw-sdk-go/version"
 )
 
 type testCaseREST struct {

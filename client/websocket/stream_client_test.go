@@ -12,10 +12,10 @@ import (
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"
 
-	"code.cryptowat.ch/cw-sdk-go/client/websocket/internal"
-	"code.cryptowat.ch/cw-sdk-go/common"
-	pbm "code.cryptowat.ch/cw-sdk-go/proto/public/markets"
-	pbs "code.cryptowat.ch/cw-sdk-go/proto/public/stream"
+	"github.com/khcchiu/cw-sdk-go/client/websocket/internal"
+	"github.com/khcchiu/cw-sdk-go/common"
+	pbm "github.com/khcchiu/cw-sdk-go/proto/public/markets"
+	pbs "github.com/khcchiu/cw-sdk-go/proto/public/stream"
 )
 
 var testStreamSubscriptions = []*StreamSubscription{

@@ -8,7 +8,7 @@ import (
 	"github.com/juju/errors"
 	"github.com/shopspring/decimal"
 
-	"code.cryptowat.ch/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/common"
 )
 
 type ohlcServer struct {
@@ -19,11 +19,14 @@ type ohlcServer struct {
 // 180, etc) to a slice of OHLC candles for that period, in the time ascending
 // order.
 func (c *RESTClient) GetOHLC(
-	exchangeSymbol, pairSymbol string,
-) (map[common.Period][]common.Interval, error) {
-	result, err := c.do(request{
-		endpoint: fmt.Sprintf("markets/%s/%s/ohlc", exchangeSymbol, pairSymbol),
-	})
+	exchangeSymbol, pairSymbol string, targetPeriod common.Period,
+) ([]common.Interval, error) {
+	result, err := c.do(
+		request{
+			endpoint: fmt.Sprintf("markets/%s/%s/ohlc", exchangeSymbol, pairSymbol),
+			params:   map[string]string{"periods": string(targetPeriod)},
+		},
+	)
 	if err != nil {
 		return nil, errors.Trace(err)
 	}
@@ -65,5 +68,5 @@ func (c *RESTClient) GetOHLC(
 		ret[period] = candles
 	}
 
-	return ret, nil
+	return ret[targetPeriod], nil
 }

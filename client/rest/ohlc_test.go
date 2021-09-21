@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"code.cryptowat.ch/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/common"
 )
 
 func TestGetOHLC(t *testing.T) {
@@ -13,7 +13,7 @@ func TestGetOHLC(t *testing.T) {
 	testCases := []testCaseREST{
 		testCaseREST{descr: "Just an example of OHLC data", // {{{
 			do: func(c *RESTClient) (interface{}, error) {
-				return c.GetOHLC("kraken", "btcusd")
+				return c.GetOHLC("kraken", "btcusd", common.Period1M)
 			},
 			resp: `
 {

@@ -1,5 +1,5 @@
 // Package config provides configuration for client apps based on the Cryptowatch SDK.
-package config // import "code.cryptowat.ch/cw-sdk-go/config"
+package config // import "github.com/khcchiu/cw-sdk-go/config"
 
 import (
 	"fmt"

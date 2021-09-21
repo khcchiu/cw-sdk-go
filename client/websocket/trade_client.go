@@ -12,12 +12,12 @@ import (
 	"github.com/juju/errors"
 	"github.com/shopspring/decimal"
 
-	"code.cryptowat.ch/cw-sdk-go/client/cw"
-	"code.cryptowat.ch/cw-sdk-go/client/rest"
-	"code.cryptowat.ch/cw-sdk-go/common"
-	"code.cryptowat.ch/cw-sdk-go/config"
-	pbb "code.cryptowat.ch/cw-sdk-go/proto/public/broker"
-	pbs "code.cryptowat.ch/cw-sdk-go/proto/public/stream"
+	"github.com/khcchiu/cw-sdk-go/client/cw"
+	"github.com/khcchiu/cw-sdk-go/client/rest"
+	"github.com/khcchiu/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/config"
+	pbb "github.com/khcchiu/cw-sdk-go/proto/public/broker"
+	pbs "github.com/khcchiu/cw-sdk-go/proto/public/stream"
 )
 
 const (

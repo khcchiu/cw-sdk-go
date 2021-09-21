@@ -10,9 +10,9 @@ import (
 
 	math "math"
 
-	client "code.cryptowat.ch/cw-sdk-go/proto/public/client"
+	client "github.com/khcchiu/cw-sdk-go/proto/public/client"
 
-	markets "code.cryptowat.ch/cw-sdk-go/proto/public/markets"
+	markets "github.com/khcchiu/cw-sdk-go/proto/public/markets"
 
 	io "io"
 )

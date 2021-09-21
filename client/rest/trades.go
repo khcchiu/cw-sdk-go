@@ -8,7 +8,7 @@ import (
 	"github.com/juju/errors"
 	"github.com/shopspring/decimal"
 
-	"code.cryptowat.ch/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/common"
 )
 
 // GetTrades returns latest trades on the given market, sorted in ascending

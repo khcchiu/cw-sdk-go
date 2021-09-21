@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"code.cryptowat.ch/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/common"
 )
 
 func TestGetTrades(t *testing.T) {

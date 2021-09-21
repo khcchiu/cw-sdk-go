@@ -3,8 +3,8 @@ package rest
 import (
 	"github.com/juju/errors"
 
-	"code.cryptowat.ch/cw-sdk-go/cache"
-	"code.cryptowat.ch/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/cache"
+	"github.com/khcchiu/cw-sdk-go/common"
 )
 
 type MockV2Client struct {

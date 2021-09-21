@@ -6,8 +6,8 @@ import (
 
 	"github.com/juju/errors"
 
-	"code.cryptowat.ch/cw-sdk-go/client/cw"
-	"code.cryptowat.ch/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/client/cw"
+	"github.com/khcchiu/cw-sdk-go/common"
 )
 
 // tradeSession is used to keep track of what modules are ready per-session.

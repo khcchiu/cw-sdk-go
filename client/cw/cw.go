@@ -1,7 +1,7 @@
 // Package cw allows sdk users to easily get Cryptowatch objects without doing any extra work.
 package cw
 
-import "code.cryptowat.ch/cw-sdk-go/common"
+import "github.com/khcchiu/cw-sdk-go/common"
 
 // GetMarketParams is the parameter type to GetMarket which allows you to get a market by
 // Symbol OR ID. Only one needs to be present.

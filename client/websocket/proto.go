@@ -8,11 +8,11 @@ import (
 	"github.com/juju/errors"
 	"github.com/shopspring/decimal"
 
-	"code.cryptowat.ch/cw-sdk-go/common"
-	pbb "code.cryptowat.ch/cw-sdk-go/proto/public/broker"
-	pbc "code.cryptowat.ch/cw-sdk-go/proto/public/client"
-	pbm "code.cryptowat.ch/cw-sdk-go/proto/public/markets"
-	pbs "code.cryptowat.ch/cw-sdk-go/proto/public/stream"
+	"github.com/khcchiu/cw-sdk-go/common"
+	pbb "github.com/khcchiu/cw-sdk-go/proto/public/broker"
+	pbc "github.com/khcchiu/cw-sdk-go/proto/public/client"
+	pbm "github.com/khcchiu/cw-sdk-go/proto/public/markets"
+	pbs "github.com/khcchiu/cw-sdk-go/proto/public/stream"
 )
 
 func publicOrderFromProto(po *pbm.Order) (common.PublicOrder, error) {

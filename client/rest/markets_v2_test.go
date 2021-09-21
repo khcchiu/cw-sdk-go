@@ -3,7 +3,7 @@ package rest
 import (
 	"testing"
 
-	"code.cryptowat.ch/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/common"
 )
 
 var bitfinexBTCUSD = common.Market{

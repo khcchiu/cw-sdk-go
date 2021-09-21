@@ -3,7 +3,7 @@ package orderbooks
 import (
 	"github.com/juju/errors"
 
-	"code.cryptowat.ch/cw-sdk-go/common"
+	"github.com/khcchiu/cw-sdk-go/common"
 )
 
 // OrderBook represents a mutable order book, which is able to receive snapshots
